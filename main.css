@@ -1,0 +1,560 @@
+body{
+    overflow-x: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: #42455a ;  */
+
+}
+
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+.container{
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
+
+.pic{
+    border: 4px #42455a solid;
+    margin: auto;
+    border-radius: 50%;
+    margin-top: 0px;
+    background-color: white;
+    width: 150px;
+    height: 150px;
+}
+
+.main-section{
+    margin-top: 100px;
+    color: white;
+}
+
+.pic{
+
+    background-image: url(./tk2.jpg);
+    background-size: 100%; /*learning curve */
+}
+
+.face{
+    position: relative;
+    top: 60px;
+    /* color: #333; */
+}
+
+.greeting{
+    font-family: tahoma;
+    font-size: 30px;
+}
+
+.intro{
+    font-size: 20px;
+}
+
+
+.name{
+    font-family: tahoma;
+    font-size: 40px;
+}
+
+.name .surname{
+    font-family: tahoma;
+    color: orange;
+    font-weight: lighter;
+}
+
+.title{
+    color: orange;
+    text-transform: uppercase;
+}
+
+.smaller{
+    color: yellow;
+}
+ .greater{
+     color: yellow;
+ }
+
+ .pacman1{
+     margin-left: 10px;
+
+ }
+
+.toon1{
+     width:30px;
+     opacity: 0;
+     animation-name: mypac;
+     animation-delay: 4s;
+     animation-duration: 15s;
+     animation-fill-mode: forwards;
+ }
+.toon2{
+     width:30px;
+     animation-name: myredberry;
+     animation-duration: 15s;
+     animation-delay: 8.3s;
+     animation-timing-function: linear;
+     animation-fill-mode: forwards;
+ }
+.toon3{
+     opacity: 0;
+     width:30px;
+     animation-name: myredtoon;
+     animation-duration: 7s;
+     animation-delay: 10s;
+     animation-timing-function: linear;
+     animation-fill-mode: forwards;
+ }
+
+ @keyframes mypac{
+     0%{
+         opacity: 1;
+         transform: translateX(-1050px);
+     }
+
+     99%{
+        opacity: 1;
+        transform: translateX(1100px);
+     }
+
+     100%{
+        opacity: 0;
+        transform: translateX(1105px);
+    }
+ }
+
+ @keyframes myredberry{
+     0%{
+        opacity: 0;
+     }
+
+     100%{
+        opacity: 0;
+     }
+ }
+
+ @keyframes myredtoon{
+     0%{
+         opacity: 1;
+         transform: translateX(-950px);
+     }
+
+     99%{
+        opacity: 1;
+        transform: translateX(1100px);
+     }
+
+     100%{
+         opacity: 0;
+         transform: translateX(1105px);
+     }
+
+ }
+
+ /* about */
+
+
+ .line{
+    color: orange;
+}
+
+.about-con{
+    color: white;
+    margin: auto;
+    width: 90%;
+}
+
+.about-con .name{
+    text-align: center;
+    margin-top: 60px;
+    color: gray;
+}
+
+.about-con .w2four{
+    margin-top: -35px;
+    text-align: center;
+}
+
+.about-con .bio{
+    text-align: center;
+}
+
+.about-con .bio .head-bio{
+    font-size: 30px;
+    color: gray;
+    margin-bottom: -15px;
+}
+
+.about-con .bio .bio-details{
+    font-size: 18px;
+    letter-spacing: 0.8px;
+}
+
+.about-con .personal-info{
+    margin-top: 20px;
+}
+
+.about-con .personal-info .head-pi-list{
+    color: gray;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: -5px;
+}
+
+.about-con .personal-info .pih-list{
+    color: yellow;
+}
+
+.about-con .tech-skills .head-ts-list{
+    color: gray;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: -5px;
+
+}
+
+.about-con .tech-skills .ts-list {
+ background-color: rgba(0, 0, 0, 0.5);
+ color: white;
+ font-size: 14px;
+ font-weight: bold;
+ font-family: Arial, Helvetica, sans-serif;
+ border-radius: 15px;
+ border: 5px;
+ padding: 5px;
+ display: block;
+ margin: 8px 0;
+ text-transform: uppercase;
+ width: max-content;
+}
+
+.about-con .soft-skills .head-ss-list{
+    color: gray;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: -5px;
+}
+
+.about-con .ss-list{
+    background-color: darkslategrey;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 0px 15px 15px 0;
+    border: 5px;
+    padding: 5px;
+    display: block;
+    margin: 8px 0;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+
+
+
+
+.menu-btn{
+    position: absolute;
+    z-index: 1;
+    right: 1rem;
+    top: 1rem;
+    height: 20px;
+    width: 28px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu-text{
+    font-size: 20px;
+    color: yellow;
+    position: absolute;
+    right: 35px;
+    top: -23px;
+}
+
+.menu-btn_burger{
+    position: absolute;
+    right: 0;
+    top: 0.5rem;
+    width: 28px;
+    border-radius: 5px;
+    height: 3px;
+    background: white;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu-btn_burger::before{
+    content: "";
+    position: absolute;
+    top: -8px;
+    width: 28px;
+    height: 3px;
+    background: white ;
+    transition: all 0.5s ease-in-out;
+}
+.menu-btn_burger::after{
+    content: "";
+    position: absolute;
+    top: 8px;
+    width: 28px;
+    height: 3px;
+    background: white ;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu-btn .menu-btn_burger.open{
+    /* transform: translateX(-0px); */
+    transform: rotate(360deg); 
+    background: transparent;
+    box-shadow: none;
+}
+
+.menu-btn .menu-btn_burger.open::before{
+    transform: rotate(45deg) translate(5px, 8px);
+}
+
+.menu-btn .menu-btn_burger.open::after{
+    transform: rotate(-45deg) translate(3px, -7px);
+}
+
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    opacity: 0.98;
+    visibility: hidden;
+}
+
+.nav.open{
+    visibility: visible;
+}
+
+.nav .menu-nav{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    border-right:2px #42455a solid ;
+    width: 25vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #333; /* edited */
+   
+    list-style-type: none;
+    padding-right: 1rem;
+    transform: translateX(-100%);
+    transition: all 0.5s ease-in-out;
+}
+
+.nav .menu-nav.open{
+    transform: translateY(-3%);
+}
+
+
+.nav .menu-nav_item:nth-child(1){
+    
+    transform: translateX(-130vw);
+    transition: all 2s  ;
+}
+.nav .menu-nav_item:nth-child(2){
+    
+    transform: translateX(-130vw);
+    transition: all 2s ;
+    transition-delay: 0.5s;
+}
+.nav .menu-nav_item:nth-child(3){
+    transform: translateX(-130vw);
+    transition: all 2s ;
+    transition-delay: 0.8s;
+}
+.nav .menu-nav_item:nth-child(4){
+    
+    transform: translateX(-130vw);
+    transition: all 2s ;
+    transition-delay: 1s;
+}
+
+.nav .menu-nav_item.open {
+    transform: translateY(0);
+} 
+
+.nav .menu-nav_item.active > a {
+    color: red;
+}
+
+.container{
+    width: 100%;
+}
+
+/* the links */
+.menu-nav_item > a{
+    display: inline-block;
+    padding: 8px;
+    width: 100px;
+    border-right: 2px yellow solid;
+    color: white;
+    background: #42455a;
+    margin-bottom: 10px;
+    list-style: none;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.menu-nav_link:hover{
+    color: yellow;
+    background: #333;
+}
+
+/* projects */
+.pro-con{
+    text-align: center;
+    margin-top: 70px;
+}
+
+.pro-con2 ul{
+    color: white;
+    list-style: none;
+}
+
+.pro-con2 .fa{
+    color: orange;
+}
+
+.pro-con2 .fa-check-square-o{
+    color: gray;
+}
+
+
+.pro-head{
+   color: orange;
+}
+
+.word1{
+    color: gray;
+}
+
+.pro-con2 a{
+    border: 0.1px pink solid;
+    color: pink;
+}
+
+.pro-name{
+    letter-spacing: 0.1em;
+    color: gray;
+}
+
+.toon4{
+    opacity: 0;
+    width:40px;
+    animation-name: enecrew;
+    animation-duration: 8s;
+    animation-delay: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+.toon5{
+    opacity: 0;
+    width:90px;
+    animation-name: beast;
+    animation-duration: 8s;
+    animation-delay: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes enecrew{
+    0%{
+        opacity: 1;
+        transform: translateX(-1050px);
+    }
+
+    99%{
+       opacity: 1;
+       transform: translateX(1400px);
+    }
+
+    100%{
+       opacity: 0;
+       transform: translateX(1405px);
+   }
+}
+
+@keyframes beast{
+    0%{
+        opacity: 1;
+        transform: translateX(-950px);
+    }
+
+    99%{
+       opacity: 1;
+       transform: translateX(1400px);
+    }
+
+    100%{
+        opacity: 0;
+        transform: translateX(1405px);
+    }
+
+}
+
+
+.con-contacts{
+    position: relative;
+    top: 100px;
+    text-align: center;
+    width: 400px;
+    margin: auto;
+}
+
+.con-contacts .my-contacts{
+    color: white;
+    font-size: 25px;
+    border: 1px pink solid;
+    padding: 10px;
+}
+
+.CF{
+    color: orange;
+    font-size: 40px;
+}
+
+
+footer{
+    position: relative;
+    bottom: 1px;
+    left: 5px;
+    color: white;
+    font-size: 14px;
+}
+
+ .f2{
+    position: absolute;
+    bottom: 1px;
+    left: 5px;
+    color: white;
+    font-size: 14px;
+}
+
+.pro-links{
+    line-height: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
